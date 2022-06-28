@@ -131,16 +131,20 @@ address {
 .contact {
     display: flex;
 }
-.headercontact-item::before {
-    display: inline-block;
-    content: '';
+.icon-tools {
+    display: flex;
+    align-items: center;
+}
+.icon-phone,
+.icon-mail {
+    fill: #757575;
     margin-right: 10px;
-    width: 16px;
-    height: 12px;
-    background-color: teal;
-    background-position: center;
 }
 
+.icon-mail,
+.icon-phone {
+    fill: currentColor;
+}
 .headercontact-item .link {
     color: var(--secondary-text-color);
 }
