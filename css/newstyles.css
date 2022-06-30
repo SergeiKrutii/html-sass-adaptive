@@ -319,11 +319,19 @@ address {
 .clients-list {
     display: flex;
 }
+/* .flex { */
+/* flex-basis: auto; */
+/* max-width: 170px; */
+/* } */
 .clients-item {
     fill: #afb1b8;
     padding: 16px 32px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
+    cursor: pointer;
+    flex-basis: 170px;
+    /* min-width: 170px; */
+    max-width: 170px;
 }
 .clients-item:not(:last-child) {
     margin-right: 30px;
