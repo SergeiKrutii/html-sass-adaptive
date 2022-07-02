@@ -131,10 +131,7 @@ address {
 .contact {
     display: flex;
 }
-/* .icon-tools {
-    display: flex;
-    align-items: center;
-} */
+
 .icon-phone,
 .icon-mail {
     fill: #757575;
