@@ -1,5 +1,3 @@
 {
-    "editor.wordWrap": "wordWrapColumn",
-    "diffEditor.wordWrap": "on",
-    "editor.wordWrapColumn": 150
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?,"
 }
