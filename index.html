@@ -249,16 +249,7 @@
                     </li>
                 </ul>
             </section>
-            <div class="backdrop is-hidden" data-modal>
-                <div class="modal">
-                    <p>HELOO ;D</p>
-                    <button type="button" class="modalbtn" data-modal-close>
-                        <svg width="18px" height="18px">
-                            <use href="./images/icons.svg#icon-closeback"></use>
-                        </svg>
-                    </button>
-                </div>
-            </div>
+
             <!-- ПОСТОЯННЫЕ КЛИЕНТЫ -->
             <section class="section">
                 <h2 class="secondheader">Постоянные клиенты</h2>
@@ -309,6 +300,57 @@
                     </ul>
                 </div>
             </section>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button type="button" class="modalbtn" data-modal-close>
+                        <svg width="18px" height="18px">
+                            <use href="./images/icons.svg#icon-closeback"></use>
+                        </svg>
+                    </button>
+                    <strong class="form-title">Оставьте свои данные, мы вам перезвоним</strong>
+                    <form class="form-input">
+                        <div class="box-input">
+                            <input type="name" class="input" placeholder=" " />
+                            <label for="name" class="textlabel-input">Имя</label>
+                            <svg class="input-image" width="18px" height="18px">
+                                <use href="./images/icons.svg#icon-person"></use>
+                            </svg>
+                        </div>
+                        <div class="box-input">
+                            <input type="tel" class="input" placeholder=" " />
+                            <label for="tel" class="textlabel-input">Телефон</label>
+                            <svg class="input-image" width="18px" height="18px">
+                                <use href="./images/icons.svg#icon-phoneblack"></use>
+                            </svg>
+                        </div>
+                        <div class="box-input">
+                            <input type="email" class="input" placeholder=" " />
+                            <label for="email" class="textlabel-input">Почта</label>
+                            <svg class="input-image" width="18px" height="18px">
+                                <use href="./images/icons.svg#icon-emailblack"></use>
+                            </svg>
+                        </div>
+                        <div>
+                            <label for="textarea" class="textarea-label">Коментарий</label>
+                            <textarea name="comment" id="textarea" class="textarea" rows="10" placeholder="Введите текст"></textarea>
+                        </div>
+                    </form>
+
+                    <div class="checkbox-text">
+                        <div>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="checkbox" class="check-input" />
+                                <svg class="icon-check" width="16px" height="15px">
+                                    <use href="./images/icons.svg#icon-check"></use>
+                                </svg>
+                                Соглашаюсь с рассылкой и принимаю
+                            </label>
+                            <a href="" class="link contract-link">Условия договора</a>
+                        </div>
+                        <button type="submit" class="send-btn">Отправить</button>
+                    </div>
+                </div>
+            </div>
         </main>
         <!--  ФУТЕР САЙТА -->
         <footer class="footer">
@@ -348,6 +390,18 @@
                         </li>
                     </ul>
                 </div>
+                <form class="submit-form">
+                    <h2 class="footer-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+                    <input type="email" class="mail-input" name="email" id="mail" placeholder="E-mail" />
+                    <div class="submit-box">
+                        <button class="submit-btn" type="submit">
+                            Подписаться
+                            <svg class="send-icon" width="24px" height="24px">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
             </div>
         </footer>
         <script src="./js/modal.js"></script>
