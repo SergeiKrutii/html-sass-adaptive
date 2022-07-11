@@ -437,6 +437,7 @@ address {
     padding: 72px 0 100px 0;
 }
 .footer-title {
+    display: block;
     margin-bottom: 20px;
 }
 .footer-title,
@@ -644,7 +645,6 @@ input:not(:placeholder-shown) {
 .send-btn,
 .submit-btn {
     padding: 0;
-    margin-top: 20px;
     width: 200px;
     height: 50px;
     color: #ffffff;
@@ -667,6 +667,7 @@ input:not(:placeholder-shown) {
     height: 50px;
     padding: 15px 0 15px 16px;
     border: 1px solid;
+    background-color: #2f303a;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .mail-input:placeholder-shown {
