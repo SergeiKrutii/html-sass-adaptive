@@ -1,0 +1,11 @@
+.headerlogo {
+    @extend .mainlogo;
+    margin-right: 93px;
+}
+
+.firstpartlogo {
+    color: $effect-headerlogo-color;
+}
+.secondpartlogo {
+    color: #000000;
+}

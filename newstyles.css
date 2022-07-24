@@ -94,9 +94,7 @@ address {
     letter-spacing: 0.03em;
     text-decoration: none;
 }
-.headerlogo {
-    margin-right: 93px;
-}
+
 .firstpartlogo {
     color: var(--effect-headerlogo-color);
 }

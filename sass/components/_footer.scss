@@ -1,0 +1,120 @@
+/*//////////////////////////////////////// Секция 1 "ФУТЕР САЙТА */
+.footer {
+    background-color: #2f303a;
+}
+.footer__container {
+    display: flex;
+    padding-bottom: 60px;
+}
+.footerlogo {
+    @extend .mainlogo;
+    display: inline-block;
+    width: 145px;
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
+.secondpartlogo--white {
+    color: #ffffff;
+}
+.footer__adress {
+    align-items: center;
+}
+.footer__text {
+    margin-bottom: 9px;
+    color: $primary-textaddress-color;
+}
+.footer__list {
+    @extend .list;
+}
+.footer__item {
+    margin-bottom: 9px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.footer__link {
+    @extend .link;
+    color: rgba(255, 255, 255, 0.6);
+    &:hover,
+    &:focus {
+        color: $accent-text-color;
+    }
+}
+/*//////////////////////////////////////// Секция 2 "ФУТЕР САЙТА */
+.footersocial {
+    margin-left: 70px;
+    padding: 72px 0 100px 0;
+    &__item:hover {
+        background-color: $effect-button-color;
+    }
+}
+.footersocial__title {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footersocial__list {
+    @extend .list;
+    display: flex;
+}
+.footersocial__item {
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    fill: #ffffff;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/*//////////////////////////////////////// Секция 3 "ФУТЕР САЙТА */
+.footersubmit {
+    margin: 72px 0 94px 93px;
+}
+.footersubmit__input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 0 15px 16px;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: #2f303a;
+    color: #ffffff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    &:placeholder-shown {
+        border-color: rgba(255, 255, 255, 0.3);
+    }
+    &:not(:placeholder-shown) {
+        border-color: rgb(3, 240, 42);
+    }
+}
+.footersubmit__title {
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.submitBox__btn {
+    @extend %mainButton;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 12px;
+
+    fill: #ffffff;
+
+    &:hover {
+        color: black;
+        background-color: rgb(46, 235, 8);
+        fill: black;
+    }
+}
+.submitBox {
+    display: inline-block;
+    position: relative;
+}
+
+.submitBox__icon {
+    margin: 13px 0 13px 10px;
+}

@@ -1,0 +1,107 @@
+$accent-text-color: #2196f3;
+$primary-button-color: #f5f4fa;
+$primary-link-text-color: #212121;
+$primary-text-color: #212121;
+$primary-textaddress-color: #ffffff;
+$secondary-text-color: #757575;
+$effect-button-color: #2196f3;
+$effect-headerlogo-color: #2196f3;
+$secondary-footer-color: rgb(255, 255, 255, 0.6);
+$card-set-gap: 30px;
+
+.mainlogo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.navigation__link,
+.navigation__item,
+.contact__link,
+.advantages__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $primary-button-color;
+}
+.advantages__text,
+.address__text,
+.footer__link,
+.footer__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+}
+.secondarytitle {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+}
+.footersocial__title,
+.footersubmit__title,
+.activity__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+.checkbox__button,
+.submitBox__btn {
+    padding: 0;
+    width: 200px;
+    height: 50px;
+    color: #ffffff;
+    border-color: transparent;
+    background-color: $effect-button-color;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+}
+.checkbox_button--demensions {
+    padding: 0;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+}
+%mainButton {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: $effect-button-color;
+    color: $primary-button-color;
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+%labelFonts {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    color: $secondary-text-color;
+
+    letter-spacing: 0.01em;
+}
