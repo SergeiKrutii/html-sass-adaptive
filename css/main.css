@@ -121,7 +121,7 @@ body {
   color: #212121;
 }
 
-.list, .sorting__list, .footersocial__list, .footer__list, .clients, .worker__list, .activity__list, .advantages__list, .navigation__list {
+.list, .projects, .sorting__list, .footersocial__list, .footer__list, .clients, .worker__list, .activity__list, .advantages__list, .navigation__list {
   list-style: none;
   text-decoration: none;
 }
@@ -131,7 +131,7 @@ body {
   transition: color 555ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.container, .header__container {
+.container, .sorting, .footer__container, .worker, .activity, .advanteges, .hero__container, .header__container {
   width: 1200px;
   padding: 0 15px 0 15px;
   margin-top: 0;
@@ -238,7 +238,7 @@ body {
   max-width: 1600px;
   height: 600px;
   background-color: #c4c4c4;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../../images/heropic.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heropic.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -274,7 +274,7 @@ body {
   background-color: #f5f4fa;
 }
 
-.advantages {
+.advanteges {
   padding-bottom: 0;
 }
 
@@ -321,7 +321,7 @@ body {
   margin-right: 0;
 }
 
-.worker {
+.section--color {
   background: #f5f4fa;
 }
 
@@ -741,12 +741,13 @@ body {
   margin-top: -30px;
   margin-left: -30px;
 }
-.projects__item:hover, .projects__overlay {
+.projects__item:hover .projects__overlay {
   transform: translateY(0);
   transition: transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects__item {
+  cursor: pointer;
   flex-basis: calc(33.3333333333% - 30px);
   margin-top: 30px;
   margin-left: 30px;
@@ -754,7 +755,6 @@ body {
 }
 .projects__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
 }
 
 .projects__img {
@@ -776,9 +776,6 @@ body {
 }
 
 .projects__textoverlay {
-  position: absolute;
-  top: 63px;
-  left: 24px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -794,7 +791,7 @@ body {
   border-left: 1px solid #eeeeee;
 }
 
-.project__title {
+.projects__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;

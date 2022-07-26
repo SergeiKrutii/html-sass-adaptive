@@ -3,6 +3,7 @@
     background-color: #2f303a;
 }
 .footer__container {
+    @extend .container;
     display: flex;
     padding-bottom: 60px;
 }

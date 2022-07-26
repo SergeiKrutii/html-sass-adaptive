@@ -1,4 +1,5 @@
 .sorting {
+    @extend .container;
     margin-bottom: 50px;
 }
 .sorting__list {

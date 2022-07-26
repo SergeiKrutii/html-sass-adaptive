@@ -1,5 +1,8 @@
-.worker {
+.section--color {
     background: #f5f4fa;
+}
+.worker {
+    @extend .container;
 }
 .worker__list {
     @extend .list;
