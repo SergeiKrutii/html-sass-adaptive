@@ -238,7 +238,7 @@ body {
   max-width: 1600px;
   height: 600px;
   background-color: #c4c4c4;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/heropic.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../../images/heropic.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
