@@ -13,10 +13,16 @@
     </head>
     <body>
         <!-- Шапка сайта -->
-        <header class="header">
+         <header class="header">
             <div class="header__container">
+                <a href="./index.html" class="headerlogo"> <span class="firstpartlogo">Web</span><span class="secondpartlogo">Studio</span></a>
+                <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg aria-label="Переключатель мобильного меню" width="24px" height="16px">
+                            <use class="icon-menu" href="./images/icons.svg#icon-menuOpen"></use>
+                        </svg>
+                    </button>
                 <nav class="navigation">
-                    <a href="./index.html" class="headerlogo"> <span class="firstpartlogo">Web</span><span class="secondpartlogo">Studio</span></a>
+                    
                     <ul class="navigation__list">
                         <li class="navigation__item">
                             <a class="navigation__link" href="./index.html">Студия</a>
@@ -44,10 +50,50 @@
                     </li>
                 </ul>
             </div>
+                </nav>
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button type="button" class="menu-toggle js-close-menu" id="closebtn">
+                        <svg aria-label="Переключатель мобильного меню" width="24px" height="16px">
+                            <use class="icon-menu" href="./images/icons.svg#icon-menuClose"></use>
+                        </svg>
+                    </button>
+                    <ul class="mobilemenu__list">
+                        <li class="mobilemenu__item">
+                            <a class="mobilemenu__link mobilemenu__link--active" href="./index.html">Студия</a>
+                        </li>
+                        <li class="mobilemenu__item"><a class="mobilemenu__link" href="./pfolio.html">Портфолио</a></li>
+                        <li class="mobilemenu__item"><a class="mobilemenu__link" href="">Контакты</a></li>
+                    </ul>
+                    <ul class="mobileMenuContact">
+                        <li class="mobileMenuContact__item">
+                            <a class="mobileMenuContact__link" href="mailto:info@devstudio.com">
+                                <!-- <svg class="contact__imagemail" width="16" height="12px">
+                                <use href="./images/icons.svg#icon-mail"></use>
+                            </svg> -->
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li class="contact__item">
+                            <a class="mobileMenuContact__link mobileMenuContact__link--style" href="tel:+380961111111">
+                                <!-- <svg class="contact__imagephone" width="10px" height="16px">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                            </svg> -->
+                                info@devstudio
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="socialNetworks">
+                        <li class="socialNetworks__item"><a class="socialNetworks__link" href="Instagram">Instagram </a></li>
+                        <li class="socialNetworks__item"><a class="socialNetworks__link" href="Twitter"> Twitter </a></li>
+                        <li class="socialNetworks__item"><a class="socialNetworks__link" href="Facabook"> Facabook </a></li>
+                        <li class="socialNetworks__item"><a class="socialNetworks__link" href="Likedin"> Likedin </a></li>
+                    </ul>
+                </div>
+            </div>
         </header>
         <main>
             <!-- Элементы управления -->
-            <section class="section">
+            <section class="section portfolio">
                 <div class="container sorting">
                     <h1 hidden>Кнопки сортировки</h1>
                     <ul class="sorting__list">
@@ -71,12 +117,12 @@
 
                 <!-- Список готовых проектов -->
 
-                <div class="container">
+                <div class="projects__container">
                     <h2 hidden>Проекты</h2>
                     <ul class="projects">
                         <li class="projects__item">
                             <div class="projects__img">
-                                <img src="./images/technokr1.jpg" alt="Ноутбук" />
+                                <img srcset="./images/11x1.jpg 1x, ./images/11x2.jpg 2x" src="./images/11x1.jpg" alt="Ноутбук" />
                                 <div class="projects__overlay">
                                     <p class="projects__textoverlay">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -91,7 +137,7 @@
                         </li>
                         <li class="projects__item">
                             <div class="projects__img">
-                                <img src="./images/basket2.jpg" alt="Баскетболисты" />
+                                <img srcset="./images/1x1.jpg 1x, ./images/1x2.jpg 2x" src="./images/1x1.jpg" alt="Баскетболисты" />
                                 <div class="projects__overlay">
                                     <p class="projects__textoverlay">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -106,7 +152,7 @@
                         </li>
                         <li class="projects__item">
                             <div class="projects__img">
-                                <img src="./images/seeafood3.jpg" alt="Логотип ресторана" />
+                                <img srcset="./images/2x1.jpg 1x, ./images/2x2.jpg 2x" src="./images/2x1.jpg" alt="Логотип ресторана" />
                                 <div class="projects__overlay">
                                     <p class="projects__textoverlay">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -121,7 +167,7 @@
                         </li>
                         <li class="projects__item">
                             <div class="projects__img">
-                                <img src="./images/headphone4.jpg" alt="Наушники" />
+                                <img srcset="./images/3x1.jpg 1x, ./images/3x2.jpg 2x" src="./images/3x1.jpg" alt="Наушники" />
                                 <div class="projects__overlay">
                                     <p class="projects__textoverlay">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -136,7 +182,7 @@
                         </li>
                         <li class="projects__item">
                             <div class="projects__img">
-                                <img src="./images/boxes5.jpg" alt="Две коробки" />
+                                <img srcset="./images/4x1.jpg 1x, ./images/4x2.jpg 2x" src="./images/4x1.jpg" alt="Две коробки" />
                                 <div class="projects__overlay">
                                     <p class="projects__textoverlay">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -151,7 +197,7 @@
                         </li>
                         <li class="projects__item">
                             <div class="projects__img">
-                                <img src="./images/inspiration6.jpg" alt="Монитор" />
+                                <img srcset="./images/5x1.jpg 1x, ./images/5x2.jpg 2x" src="./images/5x1.jpg" alt="Монитор" />
                                 <div class="projects__overlay">
                                     <p class="projects__textoverlay">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -166,7 +212,7 @@
                         </li>
                         <li class="projects__item">
                             <div class="projects__img">
-                                <img src="./images/limited7.jpg" alt="Книга" />
+                                <img srcset="./images/6x1.jpg 1x, ./images/6x2.jpg 2x" src="./images/6x1.jpg" alt="Книга" />
                                 <div class="projects__overlay">
                                     <p class="projects__textoverlay">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -181,7 +227,7 @@
                         </li>
                         <li class="projects__item">
                             <div class="projects__img">
-                                <img src="./images/lab8.jpg" alt="Бирка" />
+                                <img srcset="./images/7x1.jpg 1x, ./images/7x2.jpg 2x" src="./images/7x1.jpg" alt="Бирка" />
                                 <div class="projects__overlay">
                                     <p class="projects__textoverlay">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -196,7 +242,7 @@
                         </li>
                         <li class="projects__item">
                             <div class="projects__img">
-                                <img src="./images/business9.jpg" alt="Ноутбук с рекламой" />
+                                <img srcset="./images/8x1.jpg 1x, ./images/8x2.jpg 2x" src="./images/8x1.jpg" alt="Ноутбук с рекламой" />
                                 <div class="projects__overlay">
                                     <p class="projects__textoverlay">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -215,13 +261,13 @@
         </main>
         <!-- Футер сайта -->
         <footer class="footer">
-            <div class="container footer__container">
-                <div>
+            <div class="footer__container">
+                <div class="footer__tablet">
                     <a href="./index.html" class="footerlogo"> <span class="firstpartlogo">Web</span><span class="secondpartlogo secondpartlogo--white">Studio</span></a>
                     <address class="footer__adress">
                         <p class="footer__text">г. Киев, пр-т Леси Украинки, 26</p>
                         <ul class="footer__list">
-                            <li class="footer__item"><a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li class="footer__item"><a class="footer__link" href="mailto:info@devstudio.com">info@example.com</a></li>
                             <li class="footer__item"><a class="footer__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
                         </ul>
                     </address>
@@ -254,10 +300,10 @@
                 <form class="footersubmit">
                     <h2 class="footersubmit__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
                     <input class="footersubmit__input" type="email" name="email" id="mail" placeholder="E-mail" />
-                    <div class="submitBox">
-                        <button class="submitBox__btn" type="submit">
+                    <div class="footersubmit__box">
+                        <button class="footersubmit__button" type="submit">
                             Подписаться
-                            <svg class="submitBox__icon" width="24px" height="24px">
+                            <svg class="footersubmit__icon" width="24px" height="24px">
                                 <use href="./images/icons.svg#icon-send"></use>
                             </svg>
                         </button>
@@ -265,5 +311,13 @@
                 </form>
             </div>
         </footer>
+        <script src="./js/modal.js"></script>
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"
+        ></script>
+        <script defer src="js/mobile-menu.js"></script>
     </body>
 </html>

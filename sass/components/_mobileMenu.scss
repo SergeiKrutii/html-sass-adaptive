@@ -1,0 +1,139 @@
+#closebtn {
+    margin-left: 420px;
+    margin-top: 10px;
+
+    @media screen and (max-width: 470px) {
+        margin-left: 310px;
+    }
+}
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+
+    outline: none;
+    &:hover,
+    &:focus {
+        fill: $accent-text-color;
+    }
+}
+@media screen and (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+.menu-container {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 796vh;
+
+    z-index: 999;
+    background-color: #fff;
+
+    transform: translateX(200%);
+    transition: transform 400ms linear;
+}
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.mobilemenu__list {
+    @extend .list;
+    margin-left: 40px;
+    margin-bottom: 302px;
+
+    @media screen and (max-width: 450px) {
+        margin-bottom: 120px;
+    }
+}
+.mobilemenu__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+.mobilemenu__link {
+    @extend .link;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17em;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    &:hover,
+    &:focus {
+        color: $accent-text-color;
+    }
+}
+.mobileMenuContact {
+    @extend .list;
+
+    margin-left: 40px;
+    margin-bottom: 64px;
+
+    &__item {
+        margin-bottom: 32px;
+    }
+
+    @media screen and (max-width: 450px) {
+    }
+}
+.mobileMenuContact__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+.mobileMenuContact__link {
+    @extend .link;
+
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17em;
+    letter-spacing: 0.02em;
+    color: $accent-text-color;
+}
+.mobileMenuContact__link--style {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16em;
+    letter-spacing: 0.02em;
+    color: $secondary-text-color;
+}
+.socialNetworks {
+    @extend .list;
+
+    display: flex;
+
+    margin-top: 64px;
+    margin-left: 40px;
+
+    @media screen and (max-width: 450px) {
+        min-width: 300px;
+    }
+}
+.socialNetworks__item {
+    cursor: pointer;
+    margin-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+    &__item:last-child {
+        margin-right: 10px;
+        border-style: none;
+    }
+}
+.socialNetworks__link {
+    @extend .link;
+    position: relative;
+    margin-right: 10px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22em;
+
+    letter-spacing: 0.02em;
+
+    color: #2196f3;
+}

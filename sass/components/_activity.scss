@@ -1,9 +1,29 @@
 .activity {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+.activity__container {
     @extend .container;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 0;
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 .activity__list {
     @extend .list;
     display: flex;
+}
+.activity__item {
+    position: relative;
+    width: 100%;
+    margin-right: 30px;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 .activity__description {
     display: block;
@@ -14,13 +34,4 @@
     text-align: center;
     padding: 27px 0;
     background: rgba(47, 48, 58, 0.8);
-}
-
-.activity__item {
-    position: relative;
-    width: 100%;
-    margin-right: 30px;
-    &:last-child {
-        margin-right: 0;
-    }
 }

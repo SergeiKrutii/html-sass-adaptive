@@ -1,16 +1,40 @@
 .header__container {
     @extend .container;
+
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    min-height: 60px;
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        justify-content: flex-start;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        min-width: 768px;
+    }
+
+    @media screen and (max-width: 767px) {
+        max-width: 767px;
+    }
 }
-// /////////////////////////////////////////ГЛАВНАЯ НАВИГАЦИЯ САЙТА
 
 .navigation {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 768px;
+        display: block;
+    }
 }
 .navigation__link {
+    @extend .link;
     padding-top: 25px;
     padding-bottom: 25px;
 
@@ -20,7 +44,6 @@
     &:focus {
         color: $accent-text-color;
     }
-    @extend .link;
 }
 
 .navigation__item {
@@ -30,10 +53,6 @@
     margin-right: 50px;
     font-family: 'Roboto';
     font-style: normal;
-
-    &:last-child {
-        margin-right: 0;
-    }
 }
 
 .navigation__list {
@@ -60,6 +79,25 @@
     display: inline-flex;
     &__item {
         margin-right: 50px;
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            margin-right: 0;
+        }
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 768px;
+        display: block;
+        margin-right: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
     }
 }
 
@@ -69,6 +107,7 @@
     fill: currentColor;
     transition: fill 555ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .contact__link {
     @extend .link;
     color: $secondary-text-color;
@@ -76,5 +115,16 @@
     &:focus {
         fill: $accent-text-color;
         color: $accent-text-color;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: inline-flex;
+        align-items: center;
+        text-align: center;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.16em;
+
+        letter-spacing: 0.02em;
     }
 }

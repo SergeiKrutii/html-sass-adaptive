@@ -16,8 +16,14 @@
         <!-- ШАПКА САЙТА -->
         <header class="header">
             <div class="header__container">
+                <a href="./index.html" class="headerlogo"> <span class="firstpartlogo">Web</span><span class="secondpartlogo">Studio</span></a>
+                <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg aria-label="Переключатель мобильного меню" width="24px" height="16px">
+                            <use class="icon-menu" href="./images/icons.svg#icon-menuOpen"></use>
+                        </svg>
+                    </button>
                 <nav class="navigation">
-                    <a href="./index.html" class="headerlogo"> <span class="firstpartlogo">Web</span><span class="secondpartlogo">Studio</span></a>
+                    
                     <ul class="navigation__list">
                         <li class="navigation__item">
                             <a class="navigation__link navigation__link--active" href="./index.html">Студия</a>
@@ -45,16 +51,52 @@
                     </li>
                 </ul>
             </div>
+                </nav>
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button type="button" class="menu-toggle js-close-menu" id="closebtn">
+                        <svg aria-label="Переключатель мобильного меню" width="24px" height="16px">
+                            <use class="icon-menu" href="./images/icons.svg#icon-menuClose"></use>
+                        </svg>
+                    </button>
+                    <ul class="mobilemenu__list">
+                        <li class="mobilemenu__item">
+                            <a class="mobilemenu__link mobilemenu__link--active" href="./index.html">Студия</a>
+                        </li>
+                        <li class="mobilemenu__item"><a class="mobilemenu__link" href="./pfolio.html">Портфолио</a></li>
+                        <li class="mobilemenu__item"><a class="mobilemenu__link" href="">Контакты</a></li>
+                    </ul>
+                    <ul class="mobileMenuContact">
+                        <li class="mobileMenuContact__item">
+                            <a class="mobileMenuContact__link" href="mailto:info@devstudio.com">
+                                <!-- <svg class="contact__imagemail" width="16" height="12px">
+                                <use href="./images/icons.svg#icon-mail"></use>
+                            </svg> -->
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li class="contact__item">
+                            <a class="mobileMenuContact__link mobileMenuContact__link--style" href="tel:+380961111111">
+                                <!-- <svg class="contact__imagephone" width="10px" height="16px">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                            </svg> -->
+                                info@devstudio
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="socialNetworks">
+                        <li class="socialNetworks__item"><a class="socialNetworks__link" href="Instagram">Instagram </a></li>
+                        <li class="socialNetworks__item"><a class="socialNetworks__link" href="Twitter"> Twitter </a></li>
+                        <li class="socialNetworks__item"><a class="socialNetworks__link" href="Facabook"> Facabook </a></li>
+                        <li class="socialNetworks__item"><a class="socialNetworks__link" href="Likedin"> Likedin </a></li>
+                    </ul>
+                </div>
+            </div>
         </header>
+
         <main>
             <section class="hero">
-                <div class="hero__container">
-                    <h1 class="hero__title">
-                        Эфективные решения <br />
-                        для вашего бизнеса
-                    </h1>
-                    <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
-                </div>
+                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+                <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
             </section>
             <!-- ПРЕИМУЩЕСТВА НАШЕЙ КОМПАНИИ -->
             <section class="section">
@@ -62,8 +104,8 @@
                     <h2 hidden>Преимущества</h2>
                     <ul class="advantages__list">
                         <li class="advantages__item">
-                            <div class="advantages__icon">
-                                <svg width="70px" height="70px">
+                            <div class="advantages__iconfon">
+                                <svg class="advantages__icon" width="70px" height="70px">
                                     <use href="./images/icons.svg#icon-antenna1"></use>
                                 </svg>
                             </div>
@@ -71,8 +113,8 @@
                             <p class="advantages__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                         </li>
                         <li class="advantages__item">
-                            <div class="advantages__icon">
-                                <svg width="70px" height="70px">
+                            <div class="advantages__iconfon">
+                                <svg class="advantages__icon" width="70px" height="70px">
                                     <use href="./images/icons.svg#icon-clock1"></use>
                                 </svg>
                             </div>
@@ -80,8 +122,8 @@
                             <p class="advantages__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                         </li>
                         <li class="advantages__item">
-                            <div class="advantages__icon">
-                                <svg width="70px" height="70px">
+                            <div class="advantages__iconfon">
+                                <svg class="advantages__icon" width="70px" height="70px">
                                     <use href="./images/icons.svg#icon-diagram1"></use>
                                 </svg>
                             </div>
@@ -89,8 +131,8 @@
                             <p class="advantages__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                         </li>
                         <li class="advantages__item">
-                            <div class="advantages__icon">
-                                <svg width="70px" height="70px">
+                            <div class="advantages__iconfon">
+                                <svg class="advantages__icon" width="70px" height="70px">
                                     <use href="./images/icons.svg#icon-astronaut1"></use>
                                 </svg>
                             </div>
@@ -101,8 +143,8 @@
                 </div>
             </section>
             <!-- ВИДЫ ДЕЯТЕЛЬНОСТИ > КАРТИНКИ -->
-            <section class="section">
-                <div class="activity">
+            <section class="section activity">
+                <div class="activity__container">
                     <h2 class="secondarytitle">Чем мы занимаемся</h2>
                     <ul class="activity__list">
                         <li class="activity__item">
@@ -127,12 +169,18 @@
                 </div>
             </section>
             <!-- СОТРУДНИКИ И ДОЛЖНОСТИ -->
-            <section class="section section--color">
+            <section class="section section__worker">
                 <div class="worker">
                     <h2 class="secondarytitle">Наша команда</h2>
                     <ul class="worker__list">
                         <li class="worker__item">
-                            <img src="./images/team1.jpg" alt="Мужчина в очках" width="270" />
+                            <img 
+                            srcset="
+                            ./images/Igor480x1.jpg 1x, 
+                            ./images/Igor480x2.jpg 2x" 
+                            src="./images/igor.jpg" 
+                            alt="Мужчина в очках" 
+                            width="450" />
                             <div class="worker__border">
                                 <h3 class="worker__name">Игорь Демьяненко</h3>
                                 <p class="worker__job">Product Designer</p>
@@ -161,7 +209,13 @@
                             </ul>
                         </li>
                         <li class="worker__item">
-                            <img src="./images/team2.jpg" alt="Женщина в очках" width="270" />
+                            <img 
+                            srcset="
+                            ./images/olga480x1.jpg 1x, 
+                            ./images/olga480x2.jpg 2x" 
+                            src="./images/olga.jpg" 
+                            alt="Женщина в очках" 
+                            width="450" />
                             <div class="worker__border">
                                 <h3 class="worker__name">Ольга Репина</h3>
                                 <p class="worker__job">Frontend Developer</p>
@@ -190,7 +244,12 @@
                             </ul>
                         </li>
                         <li class="worker__item">
-                            <img src="./images/team3.jpg" alt="Мужчина без очков" width="270" />
+                            <img srcset="
+                            ./images/nikolay480x1.jpg 1x, 
+                            ./images/nikolay480x2.jpg 2x" 
+                            src="./images/nikolay.jpg" 
+                            alt="Мужчина без очков" 
+                            width="450" />
                             <div class="worker__border">
                                 <h3 class="worker__name">Николай Тарасов</h3>
                                 <p class="worker__job">Marketing</p>
@@ -219,7 +278,12 @@
                             </ul>
                         </li>
                         <li class="worker__item">
-                            <img src="./images/team4.jpg" alt="Мужчина в очках" width="270" />
+                            <img srcset="
+                            ./images/michail480x1.jpg 1x, 
+                            ./images/michail480x2.jpg 2x" 
+                            src="./images/michail.jpg" 
+                            alt="Мужчина в очках" 
+                            width="450" />
                             <div class="worker__border">
                                 <h3 class="worker__name">Михаил Ермаков</h3>
                                 <p class="worker__job">UI Designer</p>
@@ -253,9 +317,9 @@
 
             <!-- ПОСТОЯННЫЕ КЛИЕНТЫ -->
             <section class="section">
-                <div class="container">
+                <div class="clients">
                     <h2 class="secondarytitle">Постоянные клиенты</h2>
-                    <ul class="clients">
+                    <ul class="clients__list">
                         <li class="clients__item">
                             <a href="/" class="clients__logo">
                                 <svg width="106" height="60px">
@@ -356,12 +420,12 @@
         <!--  ФУТЕР САЙТА -->
         <footer class="footer">
             <div class="footer__container">
-                <div>
+                <div class="footer__tablet">
                     <a href="./index.html" class="footerlogo"> <span class="firstpartlogo">Web</span><span class="secondpartlogo secondpartlogo--white">Studio</span></a>
                     <address class="footer__adress">
                         <p class="footer__text">г. Киев, пр-т Леси Украинки, 26</p>
                         <ul class="footer__list">
-                            <li class="footer__item"><a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li class="footer__item"><a class="footer__link" href="mailto:info@devstudio.com">info@example.com</a></li>
                             <li class="footer__item"><a class="footer__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
                         </ul>
                     </address>
@@ -394,10 +458,10 @@
                 <form class="footersubmit">
                     <h2 class="footersubmit__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
                     <input class="footersubmit__input" type="email" name="email" id="mail" placeholder="E-mail" />
-                    <div class="submitBox">
-                        <button class="submitBox__btn" type="submit">
+                    <div class="footersubmit__box">
+                        <button class="footersubmit__button" type="submit">
                             Подписаться
-                            <svg class="submitBox__icon" width="24px" height="24px">
+                            <svg class="footersubmit__icon" width="24px" height="24px">
                                 <use href="./images/icons.svg#icon-send"></use>
                             </svg>
                         </button>
@@ -406,5 +470,12 @@
             </div>
         </footer>
         <script src="./js/modal.js"></script>
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"
+        ></script>
+        <script defer src="js/mobile-menu.js"></script>
     </body>
 </html>

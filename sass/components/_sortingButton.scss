@@ -1,16 +1,47 @@
+.portfolio {
+    // @media screen and (min-width: 768px) and (max-width: 1199px) {
+    //     width: 768px;
+    // }
+    // @media screen and (min-width: 1200px) {
+    //     width: 1200px;
+
+    //     margin-left: auto;
+    //     margin-right: auto;
+    // }
+}
 .sorting {
     @extend .container;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        margin-bottom: 50px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
 }
 .sorting__list {
     @extend .list;
-    display: flex;
-    justify-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 .sorting__item {
     margin-right: 8px;
     &:last-child {
         margin-right: 0;
+    }
+    @media screen and (max-width: 767px) {
+        &:nth-child(n + 4) {
+            margin-top: 15px;
+        }
     }
 }
 

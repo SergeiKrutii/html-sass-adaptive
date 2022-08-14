@@ -7,7 +7,7 @@ $secondary-text-color: #757575;
 $effect-button-color: #2196f3;
 $effect-headerlogo-color: #2196f3;
 $secondary-footer-color: rgb(255, 255, 255, 0.6);
-$card-set-gap: 30px;
+$card-set-gap: 15px;
 
 .mainlogo {
     font-family: 'Raleway';
@@ -27,13 +27,16 @@ $card-set-gap: 30px;
     letter-spacing: 0.02em;
 }
 .hero__title {
+    font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
+
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: $primary-button-color;
+
+    color: #ffffff;
 }
 .advantages__text,
 .address__text,
@@ -46,10 +49,10 @@ $card-set-gap: 30px;
     color: $secondary-text-color;
 }
 .secondarytitle {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1, 17;
     text-align: center;
     letter-spacing: 0.03em;
     color: $primary-text-color;
@@ -64,7 +67,7 @@ $card-set-gap: 30px;
     color: #ffffff;
 }
 .checkbox__button,
-.submitBox__btn {
+.footersubmit__button {
     padding: 0;
     width: 200px;
     height: 50px;
@@ -84,6 +87,13 @@ $card-set-gap: 30px;
     margin-top: 20px;
     width: 200px;
     height: 50px;
+}
+.worker__job {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+
+    letter-spacing: 0.03em;
 }
 %mainButton {
     font-family: 'Roboto';

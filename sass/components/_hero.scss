@@ -1,27 +1,71 @@
 .hero {
-    display: block;
+    text-align: center;
+    width: 100vw;
+
     margin-left: auto;
     margin-right: auto;
-    max-width: 1600px;
-    height: 600px;
-    background-color: #c4c4c4;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heropic.jpg);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-    background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 0;
-}
-.hero__container {
-    @extend .container;
-    padding: 200px 15px 200px 15px;
-    height: 600px;
-    text-align: center;
-}
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 0px;
 
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Header480x2.jpg);
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/heroTabletx1.jpg');
+
+        @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/heroTabletx2.jpg');
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/desctopHerox1.jpg');
+
+        @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/desctopHerox2.jpg');
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        height: 600px;
+        padding-top: 200px;
+    }
+}
+.hero .hero__title {
+    padding: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        max-width: 360px;
+        line-height: 1.36;
+        max-width: 696px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62em;
+
+        text-align: center;
+        letter-spacing: 0.06em;
+    }
+    @media screen and (max-width: 480px) {
+        font-size: 26px;
+        max-width: 360px;
+    }
+}
 .hero__button {
     @extend %mainButton;
+
     padding: 0;
     margin-right: auto;
     margin-left: auto;
@@ -34,5 +78,9 @@
     &:hover {
         color: black;
         background-color: rgb(46, 235, 8);
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-top: 0;
     }
 }

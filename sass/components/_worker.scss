@@ -1,28 +1,89 @@
-.section--color {
-    background: #f5f4fa;
-}
 .worker {
     @extend .container;
+
+    @media screen and (max-width: 767px) {
+        width: 480px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 768px;
+    }
+}
+.section__worker {
+    background-color: #f5f4fa;
 }
 .worker__list {
     @extend .list;
-    display: flex;
-    justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: calc(15px * -1);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media screen and (max-width: 479px) {
+        display: block;
+        flex-wrap: nowrap;
+    }
+}
+.secondarytitle {
+    margin-top: 60px;
 }
 .worker__item {
-    margin-right: 30px;
+    width: 100%;
     text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    background-color: #ffffff;
-    &:last-child {
-        margin-right: 0;
+
+    background-color: #fff;
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        &:not(:last-child) {
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: 15px;
+        width: calc((100% - 4 * 15px) / 2);
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        width: 450px;
     }
 }
 
 .worker__border {
+    text-align: center;
+    max-width: 450px;
     margin: 30px 0 16px 0;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
+
 .worker__name {
     font-weight: 500;
     font-size: 16px;
@@ -31,9 +92,8 @@
     color: $primary-text-color;
 }
 
-.teammate__job {
+.worker__job {
     margin-top: 10px;
-    font-weight: 400px;
 }
 .social {
     display: flex;
